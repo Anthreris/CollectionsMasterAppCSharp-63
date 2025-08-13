@@ -42,8 +42,10 @@ namespace CollectionsMasterConsoleUI
             Array.Reverse(numbers);
 
             Console.WriteLine("All Numbers Reversed:");
+            NumberPrinter(numbers);
 
             Console.WriteLine("---------REVERSE CUSTOM------------");
+            ReverseArray(numbers);
 
             Console.WriteLine("-------------------");
 
@@ -175,6 +177,7 @@ namespace CollectionsMasterConsoleUI
             {
                 numberList.Add(rng.Next(0, 51));
             }
+            //NumberPrinter(numberList); Might be needed for "proper" completion
 
         }
 
@@ -191,9 +194,12 @@ namespace CollectionsMasterConsoleUI
 
         private static void ReverseArray(int[] array)
         {
-            int start = 0;
-            int end = array.Length - 1;
-
+            //Exercise video format commented out, doesn't print reverse:
+            // int start = 0; 
+            // int end = array.Length - 1;
+            int start = array.Length - 1;
+            int end = 0;
+            
             while (start < end)
             {
                 //Swap elements at start and end positions
@@ -205,6 +211,7 @@ namespace CollectionsMasterConsoleUI
                 start++;
                 end--;
             }
+            NumberPrinter(array);
         }
 
         /// <summary>
