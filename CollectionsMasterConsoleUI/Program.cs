@@ -194,11 +194,8 @@ namespace CollectionsMasterConsoleUI
 
         private static void ReverseArray(int[] array)
         {
-            //Exercise video format commented out, doesn't print reverse:
-            // int start = 0; 
-            // int end = array.Length - 1;
-            int start = array.Length - 1;
-            int end = 0;
+            int start = 0; 
+            int end = array.Length - 1;
             
             while (start < end)
             {
