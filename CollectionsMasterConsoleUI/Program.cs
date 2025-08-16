@@ -167,6 +167,7 @@ namespace CollectionsMasterConsoleUI
             {
                 Console.WriteLine("Sorry, we don't have that number!");
             }
+            NumberPrinter(numberList);
         }
 
         private static void Populater(List<int> numberList)
@@ -177,7 +178,7 @@ namespace CollectionsMasterConsoleUI
             {
                 numberList.Add(rng.Next(0, 51));
             }
-            //NumberPrinter(numberList); Might be needed for "proper" completion
+            NumberPrinter(numberList); //Might be needed for "proper" completion
 
         }
 
@@ -189,6 +190,7 @@ namespace CollectionsMasterConsoleUI
             {
                 numbers[i] = rng.Next(0, 51);
             }
+            NumberPrinter(numbers);
 
         }        
 
